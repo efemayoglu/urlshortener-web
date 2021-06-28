@@ -136,7 +136,7 @@
   -->
 
             <vs-input
-              v-if="element.type == 'text'"
+              v-if="element.type == 'text' && element.name != 'userId'"
               v-model="element.value"
               class="mt-5 w-full"
               :name="element.label"
@@ -521,6 +521,7 @@ export default {
       this.$emit("closeSidebar", false, true);
     },
     GetLabel(element) {
+      if(element.name == 'userId')return "";
       if (
         element.customProperties != null &&
         element.customProperties.labelText != null
