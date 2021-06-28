@@ -120,13 +120,10 @@
 </template>
 
 <script>
-import flatPickr from "vue-flatpickr-component";
-import "flatpickr/dist/flatpickr.css";
-import vSelect from "vue-select";
 
 export default {
   name: "transfer-table-element",
-  components: { flatPickr, vSelect },
+  components: {  },
   props: {
     elements: {
       type: Array,
