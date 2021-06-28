@@ -299,9 +299,7 @@ function toCamelCase(str) {
       return $1.toLowerCase();
     });
 }
-window.setText = function setText(selector, text) {
-  document.querySelector(selector).innerHTML = text;
-};
+
 
 import { AgGridVue } from "ag-grid-vue";
 import "@/assets/scss/vuexy/extraComponents/agGridStyleOverride.scss";
@@ -639,10 +637,6 @@ export default {
     onPaginationChanged() {
       console.log("onPaginationPageLoaded");
       if (this.gridApi) {
-        setText("#lbLastPageFound", this.gridApi.paginationIsLastPageFound());
-        setText("#lbPageSize", this.gridApi.paginationGetPageSize());
-        setText("#lbCurrentPage", this.gridApi.paginationGetCurrentPage() + 1);
-        setText("#lbTotalPages", this.gridApi.paginationGetTotalPages());
         // setLastButtonDisabled(!this.gridApi.paginationIsLastPageFound());
       }
     },
@@ -810,9 +804,7 @@ export default {
         // this.$vs.loading.close("#transfertable > .con-vs-loading");
       }
 
-      this.$nextTick(() => {
-        this.sizeToFit();
-      });
+
       //this.sizeToFit()
     },
 

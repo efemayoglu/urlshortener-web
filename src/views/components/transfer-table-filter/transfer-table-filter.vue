@@ -92,7 +92,7 @@ import transferTableElement from "./transfer-table-element.vue";
 
 import VueCountdown from "@chenfengyuan/vue-countdown";
 
- 
+
 
 
 export default {

@@ -29,7 +29,6 @@
 import transferTable from "./transfer-table/transfer-table.vue";
 import transferTableFilter from "./transfer-table-filter/transfer-table-filter.vue";
 
-import transferTableContextMenuGenerator from "./transfer-table-context-menu-generator.vue";
 
 export default {
   name: "generate-page",
@@ -76,7 +75,6 @@ export default {
   components: {
     transferTable,
     transferTableFilter,
-    transferTableContextMenuGenerator
   },
 
   watch: {
@@ -93,6 +91,7 @@ export default {
     // });
   },
   mounted() {
+    console.log("generate page mounted")
     if (this.isLoading) {
       this.$vs.loading({
         container: "#contentLoader",

@@ -17,7 +17,6 @@ import FeatherIcon  from './components/FeatherIcon.vue'
 import VxInputGroup  from './components/vx-input-group/VxInputGroup.vue'
 
 
-import TxPopup from "./customComponents/tx-popup.vue"
 
 import Multiselect from 'vue-multiselect'
 
@@ -32,7 +31,6 @@ Vue.component(VxList.name, VxList)
 Vue.component(VxBreadcrumb.name, VxBreadcrumb)
 Vue.component(FeatherIcon.name, FeatherIcon)
 Vue.component(VxInputGroup.name, VxInputGroup)
-Vue.component(TxPopup.name, TxPopup)
 
 
 // v-select component

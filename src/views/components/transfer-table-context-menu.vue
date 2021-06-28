@@ -24,7 +24,13 @@ export default {
       popupActive: false
     };
   },
-  created() {}
+  mounted() {
+    console.log("transfer-table-context menu mounted")
+
+  },
+  created() {
+
+  }
 };
 </script>
 

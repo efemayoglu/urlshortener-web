@@ -82,6 +82,7 @@
 import Vue from "vue";
 export default {
   mounted() {
+    console.log("login mounted")
     // this.Login();
   },
   created() {
