@@ -66,17 +66,10 @@
             @click="search"
             class="ml-auto mt-2"
             :disabled="!validateForm"
-            >Ara</vs-button
+            >Refresh</vs-button
           >
           <!-- @click="save_changes" -->
 
-          <vs-button
-            class="ml-4 mt-2"
-            type="border"
-            color="warning"
-            @click="reset_data"
-            >Reset</vs-button
-          >
         </div>
       </div>
     </div>
