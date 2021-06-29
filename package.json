@@ -9,6 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "grpc": "1.23.3",
     "@chenfengyuan/vue-countdown": "^1.1.4",
     "ag-grid-community": "^25.3.0",
     "ag-grid-vue": "^25.3.0",
