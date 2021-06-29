@@ -58,7 +58,7 @@
       <div class="flex flex-wrap justify-between items-center">
         <!-- ITEMS PER PAGE -->
         <div class="mb-4 md:mb-0 mr-4 ag-grid-table-actions-left">
-          <vs-dropdown vs-trigger-click class="cursor-pointer">
+          <vs-dropdown vs-trigger-click class="cursor-pointer" v-if="false">
             <div
               class="p-4 border border-solid d-theme-border-grey-light rounded-full d-theme-dark-bg cursor-pointer flex items-center justify-between font-medium"
             >
@@ -123,6 +123,8 @@
             </vs-dropdown-menu>
           </vs-dropdown>
           <!--TABLE TOP LEFT PAGINATION-->
+
+
         </div>
 
         <div
@@ -271,13 +273,13 @@
       <!-- TABLE BOTTOM PAGINATION-->
 
       <!-- <vs-pagination :total="100" v-model="10" /> -->
-
-      <vs-pagination
-        v-if="totalCount > -1"
-        :total="totalPage"
-        v-model="currentPageNumber"
-      />
-      <!-- TABLE BOTTOM PAGINATION-->
+      <!--
+           <vs-pagination
+             v-if="totalCount > -1"
+             :total="totalPage"
+             v-model="currentPageNumber"
+           />-->
+           <!-- TABLE BOTTOM PAGINATION-->
     </div>
   </div>
 </template>

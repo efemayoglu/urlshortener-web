@@ -165,8 +165,8 @@ export default {
   data() {
     return {
       message: "",
-      username: "efemayoglu1",
-      password: "password1",
+      username: "",
+      password: "",
       checkbox_remember_me: true
     };
   }
