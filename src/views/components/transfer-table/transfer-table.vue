@@ -137,6 +137,14 @@
           />
           <!-- TABLE QUICK SEARCH AREA -->
           <!-- TABLE ACTIONS AREA -->
+
+
+          <vs-button
+              @click="Add"
+              class="ml-auto mt-2"
+          >Add New Link</vs-button
+          >
+
           <vs-dropdown vs-trigger-click class="cursor-pointer">
             <div
               class="p-3 shadow-drop rounded-lg d-theme-dark-light-bg cursor-pointer flex items-end justify-center text-lg font-medium w-32"
@@ -144,6 +152,8 @@
               <span class="mr-2 leading-none">Actions</span>
               <feather-icon icon="ChevronDownIcon" svgClasses="h-4 w-4" />
             </div>
+
+
 
             <vs-dropdown-menu color="primary">
               <!-- <vs-dropdown-item>
@@ -167,16 +177,7 @@
                 </span>
               </vs-dropdown-item>-->
 
-              <vs-dropdown-item v-if="showPlus" @click="Add">
-                <span class="flex items-center">
-                  <feather-icon
-                    icon="PlusIcon"
-                    svgClasses="h-4 w-4"
-                    class="mr-2"
-                  />
-                  <span>Add New</span>
-                </span>
-              </vs-dropdown-item>
+
               <!--    <vs-dropdown-item>
                 <span class="flex items-center">
                   <feather-icon icon="FileIcon" svgClasses="h-4 w-4" class="mr-2" />

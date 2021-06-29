@@ -59,7 +59,7 @@ export default {
           name: "toLink",
           type: "text",
           editable: false,
-          creatable: true
+          creatable: true,
         },
       ]
     };

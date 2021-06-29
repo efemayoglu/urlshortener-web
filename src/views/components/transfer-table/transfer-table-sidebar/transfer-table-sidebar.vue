@@ -223,9 +223,9 @@
 
     <div class="flex flex-wrap items-center p-6" slot="footer">
       <vs-button class="mr-6" @click="submitData" :disabled="!isFormValid"
-        >Kaydet</vs-button
+        >Save</vs-button
       >
-      <vs-button type="border" color="danger" @click="close()">İptal</vs-button>
+      <vs-button type="border" color="danger" @click="close()">Cancel</vs-button>
     </div>
   </vs-sidebar>
 </template>
@@ -522,6 +522,7 @@ export default {
     },
     GetLabel(element) {
       if(element.name == 'userId')return "";
+      else return "Shorten your link ";
       if (
         element.customProperties != null &&
         element.customProperties.labelText != null
